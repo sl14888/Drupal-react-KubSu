@@ -3,22 +3,47 @@
 }
 
 .btn {
-    padding: 24px 80px;
-    border: none;
-    border-radius: 2px;
+    text-transform: uppercase;
     outline: none;
     cursor: pointer;
+    padding: 0;
+    width: 220px;
+    height: 60px;
+
 }
 
 .btn--primary {
-    border-radius: 2px solid var(--primary);
-    color: var(--primary);
+    border-radius: 5px;
+    color: #fff;
     background: transparent;
     transition: all 0.3s ease-out;
+    border: 2px solid #F14D34;
+
+    &:hover {
+        background: #F14D34;
+    }
 }
+
 
 .btn--solid {
     background-color: var(--primary);
+    transition: all 0.3s;
+    border: none;
+    border-radius: 5px;
     color: #fff;
-    padding: 24px 80px;
+
+    &:hover {
+        background: transparent;
+        border: 2px solid #F14D34;
+    }
+}
+
+.btn--medium {
+    width: 220px;
+    height: 60px;
+}
+
+.btn--large {
+    width: 300px;
+    height: 60px;
 }

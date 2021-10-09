@@ -1,11 +1,14 @@
 .navbar {
-    background-color: rgba(0, 0, 0, 1);
     z-index: 100;
-    font-size: 1em;
+    font-size: 12px;
     color: #fff;
 
+    &-bg {
+        background: rgba(#000, 0.9);
+    }
+
     &__container {
-        max-width: 1500px;
+        max-width: 1240px;
         padding: 0 30px;
         margin: 0 auto;
         display: flex;
@@ -15,11 +18,13 @@
     }
 
     &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 60px;
         cursor: pointer;
     }
 
     &__info {
-
         display: flex;
     }
 
@@ -28,6 +33,7 @@
 .nav {
     &__menu {
         display: flex;
+        align-items: center;
     }
 
     &__item {
@@ -63,6 +69,7 @@
     font-weight: 700;
 
     &::after {
+        // потом сделаю нормально картинку
         background: rgba(0, 0, 0, 0) url("../arrow-lang.svg") no-repeat scroll center center;
         content: "";
         height: 16px;
@@ -70,6 +77,10 @@
         right: -23px;
         width: 16px;
     }
+}
+
+.navbar__test {
+    display: flex;
 }
 
 .dropdown {
@@ -108,9 +119,13 @@
     .dropbtn {
         margin-left: 15px;
     }
+
+    .navbar__logo {
+        margin-right: 20px;
+    }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 930px) {
 
     .nav__menu {
         display: flex;
@@ -118,18 +133,18 @@
         width: 100%;
         height: 90vh;
         position: absolute;
-        top: 80px;
+        top: 100px;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: -1;
+        z-index: 1;
 
         &.active {
             background: #242222;
             left: 0;
             opacity: 1;
             transition: all 0.5s ease;
-            z-index: -1;
+            z-index: 1;
         }
     }
 
