@@ -1,0 +1,50 @@
+.ServiceSection{
+    padding-top: 100px;
+    
+    &__container {
+        max-width: 1210px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        width: 580px;
+        height: 155px;
+        font-size: 42px;
+        line-height: 51px;
+        color: var(--main-black);
+    }
+
+    &__text{
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 500px;
+        color: var(--main-black);
+        opacity: 0.7;
+        margin-bottom: 10px;
+    }
+
+    &__item{
+        &-box{
+            max-width: 180px;
+            margin-right: 100px;
+            margin-top: 50px;
+        }
+        &-text{
+            opacity: 0.7;
+            color: var(--main-black);
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-img{
+            margin-bottom: 25px;
+        }
+    }
+
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

@@ -2,14 +2,13 @@ import React from 'react';
 import '../../App.scss';
 import Navbar from '../Navbar';
 import SupportSection from '../SupportSection';
+import ServiceSection from '../ServiceSection';
 
 function Support() {
   return (
     <>
       <Navbar navbarStyle="navbar-bg" />
-      <SupportSection />
-      <SupportSection />
-      <SupportSection />
+      <ServiceSection />
       <SupportSection />
     </>
   );
