@@ -25,6 +25,7 @@
 
     &__item {
         &-box {
+            background-color: #fff;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -47,6 +48,7 @@
         }
 
         &-title {
+            width: 200px;
             font-weight: 700;
             font-size: 18px;
             line-height: 22px;
@@ -65,7 +67,6 @@
             position: absolute;
             bottom: 30px;
             right: 6px;
-            z-index: -1;
         }
     }
 }

@@ -8,9 +8,6 @@ function Support() {
     <>
       <Navbar navbarStyle="navbar-bg" />
       <SupportSection />
-      <SupportSection />
-      <SupportSection />
-      <SupportSection />
     </>
   );
 }

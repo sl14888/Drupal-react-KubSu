@@ -58,7 +58,7 @@ video {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 600px;
+        max-width: 627px;
         max-height: 295px;
     }
 
@@ -66,11 +66,7 @@ video {
         position: relative;
         width: 179px;
         height: 112px;
-        margin-bottom: 90px;
-
-        &:not(:nth-child(3n+3)) {
-            margin-right: 30px;
-        }
+        margin: 0 30px 90px 0;
 
         &::after {
             position: absolute;
