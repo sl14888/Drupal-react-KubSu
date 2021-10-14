@@ -1,10 +1,19 @@
 .navbar {
     z-index: 100;
+    position: absolute;
     font-size: 12px;
     color: #fff;
+    width: 100%;
+    transition: all 0.5s;
 
     &-bg {
         background: rgba(#000, 0.9);
+        z-index: 100;
+        position: absolute;
+        font-size: 12px;
+        color: #fff;
+        width: 100%;
+        transition: all 0.5s;
     }
 
     &__container {
@@ -29,6 +38,15 @@
     }
 
 }
+
+#navbar_scrolled {
+    position: fixed;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    background: rgba(#000, 0.9);
+}
+
 
 .nav {
     &__menu {

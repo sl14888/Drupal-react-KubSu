@@ -1,3 +1,9 @@
+:root {
+    --primary: #F14D34;
+    --main-black: #050C33;
+}
+
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -34,12 +40,4 @@ body {
     font-family: 'Montserrat',
         sans-serif;
     font-weight: 500;
-}
-
-.home {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-
 }

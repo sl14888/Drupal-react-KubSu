@@ -1,24 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
 import { MenuItems } from './MenuItems';
 
-const STYLES = ['', 'navbar-bg'];
+const STYLES = ['navbar', 'navbar-bg'];
 
 export const Navbar = ({ navbarStyle }) => {
+  const [scrolled, setScrolled] = React.useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 10) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+  let navbarClasses = ['navbar'];
+  if (scrolled) {
+    navbarClasses.push('scrolled');
+  }
+
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
-
   const closeMobileMenu = () => setClick(false);
-
   const checkNavbarStyle = STYLES.includes(navbarStyle)
     ? navbarStyle
     : STYLES[0];
   return (
     <>
-      <nav className={`navbar ${checkNavbarStyle}`}>
+      <nav className={`${checkNavbarStyle}`} id={navbarClasses.join('_')}>
         <div className="navbar__container">
           <div className="navbar__test">
             <Link to="/" className="navbar__logo" onClick={closeMobileMenu}>
