@@ -1,6 +1,6 @@
 .ServiceSection{
     padding-top: 100px;
-    
+
     &__container {
         max-width: 1210px;
         padding: 0 10px;
@@ -13,6 +13,7 @@
         font-size: 42px;
         line-height: 51px;
         color: var(--main-black);
+        font-weight: 700;
     }
 
     &__text{
@@ -45,6 +46,7 @@
     &__items{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
 }

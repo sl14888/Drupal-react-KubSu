@@ -6,6 +6,7 @@ import SupportSection from '../SupportSection';
 import ExpertiseSection from '../ExpertiseSection';
 import ServiceSection from '../ServiceSection';
 import TeamsSection from '../TeamsSection';
+import CasesSection from '../CasesSection';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <SupportSection />
       <ExpertiseSection />
       <TeamsSection />
+      <CasesSection />
     </>
   );
 }

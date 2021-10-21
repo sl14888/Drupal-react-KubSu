@@ -16,7 +16,7 @@ function ServiceSection() {
                 {ServiceItems.map((item, index) => {
               return (
                     <div className="ServiceSection__item-box"  key={index}>
-                    <img src={item.img} className="ServiceSection__item-img" />
+                    <img src={item.img} alt={item.alt} className="ServiceSection__item-img" />
                     <div className="ServiceSection__item-text">{item.text}</div>
                     </div>
               );

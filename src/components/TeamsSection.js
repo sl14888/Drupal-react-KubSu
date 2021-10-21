@@ -13,7 +13,8 @@ function TeamsSection() {
                     {TeamsItems.map((item, index) => {
                 return (
                         <div className="TeamsSection__item-box"  key={index}>
-                        <img src={item.img} className="TeamsSection__item-img" />
+                        <img src={item.img} alt={item.alt} className="TeamsSection__item-img" />
+                        <div className="TeamsSection__item-title">{item.title}</div>
                         <div className="TeamsSection__item-text">{item.text}</div>
                         </div>
                 );
