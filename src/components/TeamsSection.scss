@@ -49,3 +49,84 @@
         }
     }
 }
+
+@media screen and (max-width: 1099px){
+    .TeamsSection{
+        &__title{
+            font-size: 38px;
+            line-height: 26px;
+            text-align: center;
+        }
+        &__items{
+            justify-content: space-between;
+        }
+        &__item{
+            &-box {
+                &:not(:nth-child(2n+1)){
+                    margin-right: 150px;
+                    margin-left: 50px;
+                }
+                &:not(:nth-child(2n)){
+                    margin-left: 150px;
+                    margin-right: 50px;
+                }
+            }
+            &-title{
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &-text{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 980px){
+    .TeamsSection{
+        &__item{
+            &-box {
+                &:not(:nth-child(2n+1)){
+                    margin-right: 100px;
+                    margin-left: 50px;
+                }
+                &:not(:nth-child(2n)){
+                    margin-left: 100px;
+                    margin-right: 50px;
+                }
+            }
+            &-title{
+                font-size: 12px;
+                line-height: 18px;
+            }
+            &-text{
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 880px){
+    .TeamsSection{
+        &__item{
+            &-box {
+                &:not(:nth-child(2n+1)){
+                    margin-right: 50px;
+                    margin-left: 50px;
+                }
+                &:not(:nth-child(2n)){
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            }
+            &-title{
+                font-size: 12px;
+                line-height: 18px;
+            }
+            &-text{
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
